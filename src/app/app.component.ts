@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms'; 
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'esdebitami';
+  email = new FormControl('');  
+  
+  updateEmail() {  
+    this.email.setValue('sonoojaiswal@javatpoint.com');  
+  }  
 }
